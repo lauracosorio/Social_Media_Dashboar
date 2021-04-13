@@ -22,6 +22,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 30px;
+  position: relative;
+  bottom: 50px;
 }
 
 .card {
@@ -49,14 +52,85 @@ body {
   letter-spacing: 4px;
 }
 
-@media(min-width:768px){
+.card-today {
+  color: rgb(0, 128, 85);
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.overview {
+  padding: 0 32px 32px 32px;
+}
+
+.overview-titulo {
+  color: rgb(157, 161, 165);
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-pequena {
+  background-color: rgb(218, 216, 216);
+  margin: 10px;
+  flex-basis: 50%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card-pequena-img {
+  width: 20px;
+  height: 20px;
+}
+
+.card-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-titulo {
+  font-weight: bold;
+  font-size: 13px;
+  color: grey;
+}
+
+.card-pequena-numero {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.card-porcentaje {
+  font-size: 12px;
+  align-self: flex-end;
+  font-weight: bold;
+}
+
+.aumento {
+  color: rgb(0, 128, 85);
+}
+
+.disminuye {
+  color: rgb(255, 0, 76);
+}
+
+@media (min-width: 768px) {
+  .card-pequena {
+    flex-basis: 20%;
+  }
+
   .card {
-    flex-basis: 40%
+    flex-basis: 40%;
   }
 }
 
-@media(min-width: 1024px){
-.card {
-flex-basis: 23%
-}
+@media (min-width: 1024px) {
+  .card-pequena {
+    flex-basis: 20%;
+  }
+
+  .card {
+    flex-basis: 23%;
+  }
 }
